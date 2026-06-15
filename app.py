@@ -103,10 +103,10 @@ if st.button("Run Prediction"):
                 mime="application/pdf"
             )
 
-        import base64
+        st.pdf("Aerodynamic Coefficients Prediction Presentation.pdf")
 
-        with open("Aerodynamic Coefficients Prediction Presentation.pdf", "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode("utf-8")
+        # with open("Aerodynamic Coefficients Prediction Presentation.pdf", "rb") as f:
+        #     base64_pdf = base64.b64encode(f.read()).decode("utf-8")
 
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800px"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+        # pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800px"></iframe>'
+        # st.markdown(pdf_display, unsafe_allow_html=True)
